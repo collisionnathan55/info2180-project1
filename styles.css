@@ -1,11 +1,176 @@
 /* Add your CSS to this file */
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
 body {
     margin: 0;
-    font-size: 16px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 18px;
+}
+
+header, main > section, footer {
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0;
     max-width: 960px;
     width: 100%;
 }
+.container * h2 {
+    font-size: 24px;
+}
+
+/* Header-Footer Styles */
+
+header {
+    background-color: white;
+}
+header * {
+    font-size: 18px;
+}
+
+header > div > h1 {
+    float: left;
+    margin: 0;
+    padding-top: 1em;
+}
+header > div > nav {
+    float: right;
+}
+header > div > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    padding: 0;
+}
+header > div > nav > ul * {
+    /* '*' to catch anchor tag */
+    color: #6b7280;
+
+    font-weight: 700;
+
+    text-decoration: none;
+    list-style: none;
+}
+header > div > nav > ul * :hover {
+    color: #5A67D8;
+}
+
+footer {
+    background-color: #4A5567;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75em;
+}
+
+/* Section Styles */
+
+main {
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: 1fr;
+}
+
+/* Overview Hero */
+
+.overview-hero {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    background-color: #E2E8F0;
+}
+.overview-hero * img {
+    float: left;
+    width: 11rem;
+
+    margin-right: 5rem;
+}
+.overview-hero * h2 {
+    font-weight: 400;
+}
+
+/* Learn About */
+
+.learn-about * h2 {
+    color: #48BB78;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    gap: 1rem;
+}
+.card {
+    display: grid;
+    grid-template-rows: 0.75fr 1fr;
+    grid-template-columns: 1fr;
+
+    width: 14.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-style: solid;
+    border-color: #E2E8F0;
+    border-width: 0.1em;
+    border-radius: 5px;
+    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.1);
+}
+.card > img {
+    grid-row: 1;
+    width: 90%;
+    justify-self: center;
+    align-self: safe flex-end;
+}
+.card-body {
+    grid-row: 2;
+}
+.card * h3 {
+    color: #48BB78;
+    font-size: 21px;
+}
+
+/* Testing Program */
+
+.testing {
+    margin-top: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    background-color: #4A5568;
+    color: white;
+}
+.testing > .container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+.cta {
+    padding: 0.5rem;
+
+    background-color: #48BB78;
+    border-style: hidden;
+    border-radius: 5px;
+
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    width: 15rem;
+}
+.cta > a {
+    text-decoration: none;
+    color: white;
+}
+
