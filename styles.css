@@ -150,7 +150,7 @@ main {
     background-color: #4A5568;
     color: white;
 }
-.testing > .container {
+.testing > div {
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -174,3 +174,92 @@ main {
     color: white;
 }
 
+/* Recent Stories */
+
+.stories {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.stories > div > h2 {
+    margin: 0;
+    margin-bottom: 2rem;
+    color: #5A67D8;
+}
+.stories > div > article * h3 {
+    font-size: 18px;
+    text-wrap: balance;
+}
+.stories > div > article > div > p {
+    font-size: 93%;
+}
+.stories > div > h2 + article {
+    margin-bottom: 3rem;
+}
+.stories > div > article > img {
+    float: left;
+    width: 12rem;
+    margin-bottom: 1rem;
+    margin-right: 2.5rem;
+
+    border-style: hidden;
+    border-radius: 50%;
+}
+.stories > div > article > div > p :last-child {
+    color: #5A67D8;
+    font-weight: 700;
+    font-size: 90%;
+}
+.stories > div > article > div :last-child > a {
+    text-decoration: none;
+}
+
+/* Newsletter */
+
+.newsletter {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+    padding-left: 23rem;
+    padding-right: 23rem;
+
+    background-color: #48BB78;
+    color: white;
+}
+.newsletter > div > h3 {
+    text-align: center;
+}
+.newsletter * form {
+    display: grid;
+    grid-template-columns: 20fr 9fr;
+    grid-template-rows: 1fr;
+
+    align-items: safe stretch;
+    row-gap: 1rem;
+}
+.form-group {
+    grid-column: 1;
+}
+.form-group > input {
+    width: 95%;
+    height: 2.5rem;
+
+    text-indent: 1rem;
+}
+.newsletter * form > button {
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+
+    background-color: #5A67D8;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9em;
+
+    border-color: #5A67D8;
+}
+
+.message > p {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 1rem;
+}
